@@ -8,8 +8,8 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mesto</title>
-    <script type="module" crossorigin src="./assets/index-Cqjt9KGA.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-s-n_ALSU.css">
+    <script type="module" crossorigin src="./assets/index-CG6bbCl8.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DfZHRPCY.css">
   </head>
   <body class="page">
     <div class="page__content">
@@ -53,11 +53,11 @@
                 required
                 minlength="2"
                 maxlength="40"
-                pattern="[A-Za-zА-Яа-яЁё\s-]+"
-                data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы"
+                pattern="^[A-Za-zА-Яа-яёЁ\s\-]+$"
+                data-error-message="Разрешены только буквы, пробелы и дефисы"
               />
+              <span class="popup__error" id="user-name-error"></span>
             </label>
-            <span class="popup__error" id="user-name-error"></span>
 
             <label class="popup__label">
               <input
@@ -70,8 +70,8 @@
                 minlength="2"
                 maxlength="200"
               />
+              <span class="popup__error" id="user-description-error"></span>
             </label>
-            <span class="popup__error" id="user-description-error"></span>
 
             <button
               type="submit"
@@ -99,11 +99,11 @@
                 required
                 minlength="2"
                 maxlength="30"
-                pattern="[A-Za-zА-Яа-яЁё\s-]+"
-                data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы"
+                pattern="^[A-Za-zА-Яа-яёЁ\s\-]+$"
+                data-error-message="Разрешены только буквы, пробелы и дефисы"
               />
+              <span class="popup__error" id="place-name-error"></span>
             </label>
-            <span class="popup__error" id="place-name-error"></span>
 
             <label class="popup__label">
               <input
@@ -115,8 +115,8 @@
                 required
                 data-error-message="Введите корректную ссылку, например https://example.com/image.jpg"
               />
+              <span class="popup__error" id="place-link-error"></span>
             </label>
-            <span class="popup__error" id="place-link-error"></span>
 
             <button
               type="submit"
@@ -152,8 +152,8 @@
                 required
                 data-error-message="Введите корректную ссылку, например https://example.com/avatar.jpg"
               />
+              <span class="popup__error" id="user-avatar-error"></span>
             </label>
-            <span class="popup__error" id="user-avatar-error"></span>
 
             <button
               type="submit"
@@ -169,9 +169,9 @@
       <div class="popup popup_type_info">
         <div class="popup__content popup__content_content_info">
           <button type="button" class="popup__close"></button>
-          <h3 class="popup__title">Статистика</h3>
+          <h3 class="popup__title">Статистика пользователей</h3>
           <div class="popup__info"></div>
-          <p class="popup__stats-caption">Авторы карточек</p>
+          <p class="popup__stats-caption">Все пользователи:</p>
           <ul class="popup__list"></ul>
         </div>
       </div>
